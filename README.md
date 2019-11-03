@@ -60,7 +60,7 @@ Each service has its own environment. Start with selecting the `graphql service`
 
 ### (Optional) Set up ELK stack
 
-Assuming you have an ELK stack set up, this project provides: 1) a Logstash config that listens on port 9998 for inbound log events and writes to Elasticsearch and 2) a Kibana dashboard config that can be imported to your Kibana installation. 
+Assuming you have an ELK stack set up, this project provides: 1) a Logstash config (`logstash.conf`) that listens on port 9998 for inbound log events and writes to Elasticsearch and 2) a Kibana dashboard config (`kong_kibana_dashboard.ndjson`) that can be imported to your Kibana installation. 
 
 ### Simulate load against Kong gateway
 
