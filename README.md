@@ -58,6 +58,10 @@ Each service has its own environment. Start with selecting the `graphql service`
 1. plugins/configure rate limiting plugin
 1. plugins/set up tcp log plugin
 
+### (Optional) Set up ELK stack
+
+Assuming you have an ELK stack set up, this project provides: 1) a Logstash config that listens on port 9998 for inbound log events and writes to Elasticsearch and 2) a Kibana dashboard config that can be imported to your Kibana installation. 
+
 ### Simulate load against Kong gateway
 
 k6 is a load testing tool that allows you to simulate load on services. The provided k6 script will simulate 10 virtual users for 30 seconds, executing requests against all 3 services. 
